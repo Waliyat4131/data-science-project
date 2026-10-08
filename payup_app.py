@@ -27,3 +27,5 @@ print(f"Group size: {group_size}")
 print(f"Grand total: ${grand_total}")
 print()
 print(f"each person must payUp: ${total_per_person:.2f}")
+
+# Testing the display of username
