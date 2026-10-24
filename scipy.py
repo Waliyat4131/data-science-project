@@ -1,5 +1,5 @@
+# Working with list
 
-from functools import reduce
 consumptions = [
     12.5, 18.2, 9.6, 24.1, 16.8, 31.2, 14.5, 8.9, 22.4, 19.7
 ]
