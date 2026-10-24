@@ -1,9 +1,13 @@
+""" This is a simple calculator that can add, subtract, divide,
+
+multiply as well as find the square and square root of numbers"""
+
 import math
 def addition(a, b):
     print (a + b)
 
 def subtraction(a, b):
-    print (a - b)
+    return a - b
 
 
 def division(a, b):
@@ -68,7 +72,9 @@ def run_app():
             addition(a, b)
 
         elif command == "subtract":
-            subtraction(a, b)
+            print("Good")
+            print(subtraction(a, b))
+            
 
         elif command == "multiply":
             multiply(a, b)

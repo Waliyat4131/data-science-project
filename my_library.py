@@ -17,16 +17,16 @@ def list(books):
     print("Libraray Books")
     print()
     for i, item in enumerate (books):
-        title, author, availability = item
-        print(f" {i + 1} {title} - {author} - {availability} ")
+        title, author, Status = item
+        print(f" {i + 1} {title} - {author} - {Status} ")
 
 
 def prompt_for_book():
     Title = input("Title: ").strip().title()
     Author = input("Author: ").strip().title()
-    Availability = input("Availability: ").strip().title()
+    Status= input("Status: ").strip().title()
     
-    return Title, Author, Availability
+    return Title, Author, Status
 
 
 
@@ -34,8 +34,8 @@ def prompt_for_book():
 def add_book(book):
 
     """Ask for the book title and add them to the shelve """
-    title, author, availability = prompt_for_book()
-    book.append((title,author, availability))
+    title, author, status = prompt_for_book()
+    book.append((title,author,status))
     print(f"  {title} added to the shelve")
 
 
@@ -79,9 +79,10 @@ def search_books(books):
     search_title = input("Enter the book title:  ").strip()
 
     for item in books:
-        title, author, availability = item
-        
-        if item[0].lower() == search_title.lower():
+        title, author, status = item
+        print(title)
+        print(title.lower() == search_title.lower())
+        if title.lower() == search_title.lower():
             print(f"Title: {title}")
             print(f"Authour: {author}")
             print(f"Availability: {availability}")
